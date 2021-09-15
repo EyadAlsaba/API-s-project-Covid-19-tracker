@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+:root{
+    --black: rgb(13,17,23);
+    --lightblue: rgb(77, 166, 255);
+    --orang: rgb(250, 174, 74);
+    --white: rgb(230,255,237);
+    --green: rgb(0, 231, 65);
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--black);
+    font-family: 'Abel', cursive, sans-serif;
+    font-size: 24px;
+    line-height: 1.2rem;
+    color: var(--white);
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.container{
+    display: flex;
+    margin: 25px auto;
+    flex-direction: column;
+}
+.header{
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid var(--white);
+    box-shadow: 2px 2px 15px #eee;
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 5px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    position: absolute;
+    top: 32px;
+}
+#form-sub{
+    display: block;
+    margin: 5px auto;
+    padding: 10px;
+}
+#form-sub #country, #submit-btn{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#form-sub #country:hover{
+    border-color: var(--lightblue);
+    transition: 0.1s;
+    box-shadow: 2px 2px 15px blue;
+}
+#submit-btn{
+    background-color: var(--green);
+    font-weight: bold;
+    color: #fff;
+}
+#submit-btn:hover{
+    transition: 0.2s;
+    background-color:rgb(0, 173, 0);
+    color: var(--white);
+}
+.welcome{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 3rem;
+    font-style: italic;
+    color: var(--lightblue);
+    margin: 30px 10px;
+}
+#resultContainer,.errorContainer, .countryContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.countryName,.errorHeader{
+    font-size: 1.5rem;
+    margin:10px;
+    color: var(--lightblue);
+    font-weight: bold;
+}
+#resultContainer p {
+    padding: 10px;
+}
+
+#error-img{
+    border: 2px solid var(--lightblue);
+    box-shadow: 2px 2px 20px blue;
+    border-radius: 15px;
+    position: relative;
+    margin: 50px 10px;
+    max-width: 30%;
+    height: auto;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.dateContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 20px;
+}
+.time, .date{
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+.flag{
+    max-width: 5%;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+    display:inline-block;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
