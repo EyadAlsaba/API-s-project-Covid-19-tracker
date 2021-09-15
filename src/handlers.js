@@ -46,7 +46,7 @@ export function renderUserQuery () {
 
                 let img = getDOMElement('error-img');
                 document.querySelector('.errorHeader').textContent = `Please type in an valid country name !!!`;
-                img.src = './Public/error.png';
+                img.src = '../Public/error.png';
 
             } else {
                 renderResultSection();
