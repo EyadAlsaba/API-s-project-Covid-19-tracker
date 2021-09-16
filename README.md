@@ -4,6 +4,6 @@
 
 ![Home page screen][logo]
 
-[logo]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/homePageScreen.png "Home page screen"
-#### You can check the app by clicking on the link below...
+[logo]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/homePageScreen.png "Home page screen 🖥️"
+#### You can check the app by clicking on the link below ⬇️
 [https://eyadalsaba.github.io/API-s-project-Covid-19-tracker/](https://eyadalsaba.github.io/API-s-project-Covid-19-tracker/)
