@@ -1,4 +1,4 @@
-
+//This constant stored here to be make use of then while developing the app!
 export const BODY = document.querySelector('body');
 export const CONTAINER = document.querySelector('.container');
 export const MAINSECTION = document.querySelector('.main');

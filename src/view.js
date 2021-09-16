@@ -13,7 +13,7 @@ export function renderStartingPage () {
     const form = createDOMElementWithId(container,'form',{id:'form-sub'});
     const inputCountry = createDOMElementWithId(form,'input', {id:'country'});
     const submitBtn = createDOMElementWithId(form,'input', {id:'submit-btn'});
-    const welcome = createElementWithClass(container,'p','welcome');
+    const welcome = createElementWithClass(container,'p','welcomeContainer');
 
     welcome.textContent = `welcome to covid-19 tracker, our application shows last updated statistic's just in one click... ,
      all you need to do is type in your search country... `;

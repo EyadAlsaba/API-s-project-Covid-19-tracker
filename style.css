@@ -2,7 +2,6 @@
 :root{
     --black: rgb(13,17,23);
     --lightblue: rgb(77, 166, 255);
-    --orang: rgb(250, 174, 74);
     --white: rgb(230,255,237);
     --green: rgb(0, 231, 65);
 }
@@ -46,7 +45,7 @@
 }
 #form-sub{
     display: block;
-    margin: 5px auto;
+    margin:  auto;
     padding: 10px;
 }
 #form-sub #country, #submit-btn{
@@ -71,7 +70,7 @@
     background-color:rgb(0, 173, 0);
     color: var(--white);
 }
-.welcome{
+.welcomeContainer{
     font-size: 1.5rem;
     text-align: center;
     letter-spacing: 3px;
@@ -118,7 +117,7 @@
     letter-spacing: 5px;
 }
 .flag{
-    max-width: 5%;
+    max-width: 6%;
     height: auto;
     margin: 5px;
     border-radius: 5px;

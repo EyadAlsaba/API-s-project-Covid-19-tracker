@@ -13,30 +13,24 @@ export function renderUserQuery () {
         let userQuery = getDOMElement('country').value;  
             
          async function makeRequest () {
-                let x = document.getElementById('resultContainer');
-                let y = document.querySelector('.errorContainer');
-                let z = document.querySelector('.welcome')
+                let resultDiv = document.getElementById('resultContainer');
+                let errorContainer = document.querySelector('.errorContainer');
+                let welcomeContainer = document.querySelector('.welcomeContainer')
 
-                if(x) {
-                    x.remove();
+                if(resultDiv) {
+                    resultDiv.remove();
                 } 
-                if(y) {
-                    y.remove();     
+                if(errorContainer) {
+                    errorContainer.remove();     
                 }
-                if(z) {
-                    z.remove();
+                if(welcomeContainer) {
+                    welcomeContainer.remove();
                 }
 
             const url = `https://api.covid19api.com/total/dayone/country/${userQuery}`;
             const urlCountry = `https://restcountries.eu/rest/v2/name/${userQuery}`;
-            
-            getDOMElement('form-sub').addEventListener('submit', function(){
-                renderUserQuery();
-            })
 
-            let errorContainer = document.querySelector('.errorContainer')
-            
-            if(isNaN(userQuery) === false) {
+            if(isNaN(userQuery) === false || !userQuery) {
 
                 if(RESULTCONTAINER){
                     RESULTCONTAINER.remove();

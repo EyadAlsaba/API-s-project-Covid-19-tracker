@@ -1,4 +1,4 @@
-import { renderStartingPage,renderResultSection } from "./view.js";
+import { renderStartingPage } from "./view.js";
 import { renderUserQuery,renderDateAndTime} from "./handlers.js";
 
 function appStart (){
