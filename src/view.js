@@ -39,6 +39,7 @@ export function renderResultSection (){
     const confirmedCases = createElementWithClass(resultContainer,'p','confirmedCases');
     const deathsCases = createElementWithClass(resultContainer,'p','deathsCases');
     const lastUpdate = createElementWithClass(resultContainer,'p','lastUpdate');
+    const percentageMsg = createElementWithClass(resultContainer,'p','percentageMsg');
 }
 
 export function renderError(){

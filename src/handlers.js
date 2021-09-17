@@ -44,6 +44,9 @@ export function renderUserQuery () {
                 const countryRequest = await fetchData(urlCountry);
                 const { flag, population } = countryRequest[0];
 
+                const percentageDeathsOfConfirmedCases = Deaths / Confirmed * 100;
+                const percentageMessage = percentageDeathsOfConfirmedCases.toFixed(2);
+
                 renderResultSection();
                 document.querySelector('.countryName').textContent = Country;
                 document.querySelector('.countryPopulation').textContent = `population: ${population.toLocaleString()}`;               
@@ -51,9 +54,9 @@ export function renderUserQuery () {
                 document.querySelector('.confirmedCases').textContent = `Confirmed Cases: ${Confirmed.toLocaleString()}`;
                 document.querySelector('.deathsCases').textContent = `Deaths Cases: ${Deaths.toLocaleString()}`;
                 document.querySelector('.lastUpdate').textContent = `Last updated: ${Date.slice(0,10)}`;
-    
+                document.querySelector('.percentageMsg').innerHTML = `Based on the statistics, we provide you with a percentage numbers of deaths cases from the confirmed cases!<br> for <span><em style="color: red;">${Country},</em><br></span> the percentage is <em><span style="color: red;">${percentageMessage}%</span></em>`
                 document.querySelector('.flag').src = flag;
-                
+
                 if(errorContainer){
                     errorContainer.remove(); 
                 }             
@@ -65,8 +68,8 @@ export function renderUserQuery () {
 }   
 
 export function renderDateAndTime (){
-    let time = document.querySelector('.time');
-    let date = document.querySelector('.date');
+    const time = document.querySelector('.time');
+    const date = document.querySelector('.date');
 
     function addCurrentTime() {
         time.innerHTML = `time now <br>${new Date().toLocaleTimeString()}`;
