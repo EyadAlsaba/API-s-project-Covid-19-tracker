@@ -1,11 +1,12 @@
 import { RESULTCONTAINER } from "./constant.js";
-import { renderResultSection,renderError } from "./view.js";
+import { renderResultSection,renderError,renderFooter} from "./view.js";
 import {fetchData, getDOMElement} from "./utils.js";
 
 
 
 
 export function renderUserQuery () {
+    
         getDOMElement('form-sub').addEventListener('submit',function(Event){
 
         Event.preventDefault();
@@ -37,14 +38,8 @@ export function renderUserQuery () {
                     document.querySelector('.flag').remove();
                 }
                 renderError();
-
-                // const img = getDOMElement('error-img');
-                // document.querySelector('.errorHeader').textContent = `Please type in an valid country name !!!`;
-                // img.src = './Public/error.png';
-
             } else {
-                
-            
+
                 const request = await fetchData(url);   
                 const lastIndex = request.pop();
                 const { Country, Active, Confirmed, Deaths, Date } = lastIndex;   
@@ -67,10 +62,9 @@ export function renderUserQuery () {
                 }             
             } 
         };
-
+        
         makeRequest();
     });
-    
 }   
 
 export function renderDateAndTime (){

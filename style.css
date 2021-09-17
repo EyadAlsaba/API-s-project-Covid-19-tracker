@@ -158,10 +158,6 @@
         text-transform: capitalize;
         letter-spacing: 1px;
     }
-    .header{
-        width: auto;
-        margin: 0 10px;
-    }
     .logo{
         max-width: 30px;
         height: auto;
@@ -178,7 +174,7 @@
         font-style: italic;
         text-align: center;
         line-height: 30px;
-        margin: auto 50px;
+        margin: auto 30px;
     }
     #submit-btn{
         margin: 5px;
