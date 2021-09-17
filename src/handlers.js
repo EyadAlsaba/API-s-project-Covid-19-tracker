@@ -1,6 +1,6 @@
-import { BODY,RESULTCONTAINER } from "./constant.js";
+import { RESULTCONTAINER } from "./constant.js";
 import { renderResultSection,renderError } from "./view.js";
-import {fetchData, getDOMElement,clearDOMElement,createElementWithClass} from "./utils.js";
+import {fetchData, getDOMElement} from "./utils.js";
 
 
 
@@ -13,9 +13,9 @@ export function renderUserQuery () {
         let userQuery = getDOMElement('country').value;  
             
          async function makeRequest () {
-                let resultDiv = document.getElementById('resultContainer');
-                let errorContainer = document.querySelector('.errorContainer');
-                let welcomeContainer = document.querySelector('.welcomeContainer')
+                const resultDiv = document.getElementById('resultContainer');
+                const  errorContainer = document.querySelector('.errorContainer');
+                const welcomeContainer = document.querySelector('.welcomeContainer')
 
                 if(resultDiv) {
                     resultDiv.remove();
@@ -38,21 +38,21 @@ export function renderUserQuery () {
                 }
                 renderError();
 
-                let img = getDOMElement('error-img');
-                document.querySelector('.errorHeader').textContent = `Please type in an valid country name !!!`;
-                img.src = './Public/error.png';
+                // const img = getDOMElement('error-img');
+                // document.querySelector('.errorHeader').textContent = `Please type in an valid country name !!!`;
+                // img.src = './Public/error.png';
 
             } else {
-                renderResultSection();
+                
             
                 const request = await fetchData(url);   
-                        
                 const lastIndex = request.pop();
                 const { Country, Active, Confirmed, Deaths, Date } = lastIndex;   
     
                 const countryRequest = await fetchData(urlCountry);
                 const { flag, population } = countryRequest[0];
-    
+
+                renderResultSection();
                 document.querySelector('.countryName').textContent = Country;
                 document.querySelector('.countryPopulation').textContent = `population: ${population.toLocaleString()}`;               
                 document.querySelector('.activeCases').textContent = `Active cases: ${Active.toLocaleString()}`;
@@ -64,7 +64,7 @@ export function renderUserQuery () {
                 
                 if(errorContainer){
                     errorContainer.remove(); 
-                }                
+                }             
             } 
         };
 
@@ -83,7 +83,7 @@ export function renderDateAndTime (){
     setInterval(addCurrentTime, 1000);
 
     function addDate (){
-        date.textContent = `Today is : ${new Date().toLocaleDateString()}`
+        date.textContent = `Today is ${new Date().toLocaleDateString()}`
     }
     addDate();
 }

@@ -45,4 +45,6 @@ export function renderError(){
     const errorContainer = createElementWithClass(BODY,'div','errorContainer')
     const errorMessage = createElementWithClass(errorContainer,'h2','errorHeader')
     const errorImg = createDOMElementWithId(errorContainer,'img',{id:'error-img'})
+    errorMessage.textContent = `Please type in an valid country name !!!`;
+    errorImg.src = './Public/error.png';
 }

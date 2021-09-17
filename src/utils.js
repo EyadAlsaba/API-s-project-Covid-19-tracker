@@ -1,5 +1,6 @@
 // All credit's goes to HYF developers.
-
+import { renderError } from "./view.js";
+import {RESULTCONTAINER} from "./constant.js"
 export function createElementWithClass(parent, element, className) {
     const newElement = document.createElement(element);
     parent.appendChild(newElement);
@@ -29,9 +30,13 @@ export const clearDOMElement = (DOMElement) => {
 };
 
 export async function fetchData(url) {
+
     try {
       const response = await fetch(url);
       const data = await response.json();
+      if(!response.ok) {
+        renderError();
+      }
       return data;
     } catch (error) {
       console.log(error.message)

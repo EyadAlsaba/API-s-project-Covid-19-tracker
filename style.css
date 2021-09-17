@@ -6,7 +6,6 @@
     --green: rgb(0, 231, 65);
 }
 
-
 *{
     box-sizing: border-box;
     padding: 0px;
@@ -26,18 +25,17 @@
     flex-direction: column;
 }
 .header{
-    margin: auto;
-    padding: 10px;
+    width: auto;
+    margin: auto 10px;
     text-align: center;
     font-size: 2rem;
-    border: 1px solid var(--white);
-    box-shadow: 2px 2px 15px #eee;
-    width: 100%;
+    border: 2.2px solid var(--white);
+    box-shadow: 2px 2px 15px var(--white);
     padding: 20px;
     letter-spacing: 5px;
 }
 .logo{
-    width: 50px;
+    max-width: 50px;
     height: 50px;
     margin: 0 5px;
     position: absolute;
@@ -123,7 +121,7 @@
     border-radius: 5px;
     display:inline-block;
 }
-
+// Animation set up
 @keyframes shake {
     10%,
     90% {
@@ -141,5 +139,61 @@
     40%,
     60% {
       transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  // Mobile query style
+  @media only screen and (max-width: 600px) {
+    *{
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+        background-color: var(--black);
+        font-family: 'Abel', cursive, sans-serif;
+        font-size: 18px;
+        line-height: 1rem;
+        color: var(--white);
+        scroll-behavior: smooth;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+    }
+    .header{
+        width: auto;
+        margin: 0 10px;
+    }
+    .logo{
+        max-width: 30px;
+        height: auto;
+        margin: 5px;
+    }
+    .dateContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px auto;
+    }
+    .time, .date{
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        line-height: 30px;
+    }
+    #submit-btn{
+        margin: 5px;
+        padding: 7px;
+    }
+    #resultContainer p
+    .countryContainer p {
+        padding: 10px;
+        font-size: 1.1rem;
+    }
+    .errorHeader{
+        font-size: 1rem;
+    }
+    #error-img{
+        max-width: 50%;
+    }
+    .flag{
+        max-width: 10%;
     }
   }
