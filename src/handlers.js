@@ -78,12 +78,12 @@ export function renderDateAndTime (){
     let date = document.querySelector('.date');
 
     function addCurrentTime() {
-        time.textContent = `time now ${new Date().toLocaleTimeString()}`;
+        time.innerHTML = `time now <br>${new Date().toLocaleTimeString()}`;
       }
     setInterval(addCurrentTime, 1000);
 
     function addDate (){
-        date.textContent = `Today is ${new Date().toLocaleDateString()}`
+        date.innerHTML = `Today is <br>${new Date().toLocaleDateString()}`
     }
     addDate();
 }
