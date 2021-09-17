@@ -8,7 +8,7 @@
 
 [logo]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/homepage.png "Home page screen 🖥️"
 
-![Home page screen][logo]
+![Home page mobile][logo]
 
 [logo]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/mobile.png "Home page screen 📱"
 
