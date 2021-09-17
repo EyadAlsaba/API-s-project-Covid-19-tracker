@@ -10,7 +10,7 @@
 
 ![Home page mobile][link]
 
-[link]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/mobile.png "Home page screen 📱"
+                   [link]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/mobile.png "Home page screen 📱"
 
 #### You can check the app by clicking on the link below ⬇️
 [https://eyadalsaba.github.io/API-s-project-Covid-19-tracker/](https://eyadalsaba.github.io/API-s-project-Covid-19-tracker/)
