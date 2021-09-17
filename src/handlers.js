@@ -1,9 +1,6 @@
 import { RESULTCONTAINER } from "./constant.js";
-import { renderResultSection,renderError,renderFooter} from "./view.js";
+import { renderResultSection,renderError} from "./view.js";
 import {fetchData, getDOMElement} from "./utils.js";
-
-
-
 
 export function renderUserQuery () {
     

@@ -48,8 +48,3 @@ export function renderError(){
     errorMessage.textContent = `Please type in an valid country name !!!`;
     errorImg.src = './Public/error.png';
 }
-export function renderFooter () {
-    const footerContainer = createDOMElementWithId(BODY,'footer', {id:'footer'});
-    const copyright = createElementWithClass(footerContainer,'p','copyRight')
-    copyright.textContent = `©️EYAD ALSABA 2021`
-}
