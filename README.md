@@ -7,7 +7,7 @@
 [logo]: https://github.com/EyadAlsaba/API-s-project-Covid-19-tracker/blob/main/Public/homepage.png "Home page on 🖥️"
 
 #### My application is working fine, Mobile friendly, and defiantly is not one of the complex projects!
-I like to keep it simple! I will keep add things to it as far as it goes with the idea behind the DOM js implementation 🤓
+#### I like to keep it simple! I will keep add things to it as far as it goes with the idea behind the DOM js implementation 🤓
 
 ![Home page mobile][link]
 
