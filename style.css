@@ -78,7 +78,7 @@
     color: var(--lightblue);
     margin: 30px 10px;
 }
-#resultContainer,.errorContainer, .countryContainer{
+#resultContainer,#errorContainer, .countryContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +94,7 @@
     padding: 10px;
 }
 
-#error-img{
+.error-img{
     border: 2px solid var(--lightblue);
     box-shadow: 2px 2px 20px blue;
     border-radius: 15px;
@@ -172,7 +172,7 @@
     .logo{
         max-width: 28px;
         height: auto;
-        margin: 8px;
+        margin: auto 2px;
     }
     .dateContainer{
         display: flex;
@@ -185,7 +185,7 @@
         font-style: italic;
         text-align: center;
         line-height: 30px;
-        margin: auto 30px;
+        margin: auto 20px;
     }
     #submit-btn{
         margin: 5px;
@@ -199,7 +199,7 @@
     .errorHeader{
         font-size: 1rem;
     }
-    #error-img{
+    .error-img{
         max-width: 50%;
     }
     .flag{

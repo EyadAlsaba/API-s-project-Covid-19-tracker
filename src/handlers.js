@@ -12,7 +12,7 @@ export function renderUserQuery () {
             
          async function makeRequest () {
                 const resultDiv = document.getElementById('resultContainer');
-                const  errorContainer = document.querySelector('.errorContainer');
+                const  errorContainer = document.querySelector('#errorContainer');
                 const welcomeContainer = document.querySelector('.welcomeContainer')
 
                 if(resultDiv) {
@@ -54,7 +54,8 @@ export function renderUserQuery () {
                 document.querySelector('.confirmedCases').textContent = `Confirmed Cases: ${Confirmed.toLocaleString()}`;
                 document.querySelector('.deathsCases').textContent = `Deaths Cases: ${Deaths.toLocaleString()}`;
                 document.querySelector('.lastUpdate').textContent = `Last updated: ${Date.slice(0,10)}`;
-                document.querySelector('.percentageMsg').innerHTML = `Based on the statistics, we provide you with a percentage numbers of deaths cases from the confirmed cases!<br> for <span><em style="color: red;">${Country}</em><br></span> the percentage is <em><span style="color: red;">${percentageMessage}%</span></em>`
+                document.querySelector('.percentageMsg').innerHTML =
+                 `Based on the statistics, we provide you with a percentage numbers of deaths cases from the confirmed cases!<br> for <span><em style="color: red;">${Country}</em><br></span> the percentage is <em><span style="color: red;">${percentageMessage}%</span></em>`
                 document.querySelector('.flag').src = flag;
 
                 if(errorContainer){

@@ -43,9 +43,9 @@ export function renderResultSection (){
 }
 
 export function renderError(){
-    const errorContainer = createElementWithClass(BODY,'div','errorContainer')
+    const errorContainer = createDOMElementWithId(BODY,'div',{id:'errorContainer'})
     const errorMessage = createElementWithClass(errorContainer,'h2','errorHeader')
-    const errorImg = createDOMElementWithId(errorContainer,'img',{id:'error-img'})
+    const errorImg = createElementWithClass(errorContainer,'img','error-img')
     errorMessage.textContent = `Please type in an valid country name !!!`;
     errorImg.src = './Public/error.png';
 }
