@@ -30,12 +30,12 @@ export function renderStartingPage () {
 
 export function renderResultSection (){
     const resultContainer = createDOMElementWithId(BODY,'div', {id:'resultContainer'});
-    // const countryContainer = createElementWithClass(resultContainer,'div','countryContainer');
+    const countryContainer = createElementWithClass(resultContainer,'div','countryContainer');
 
-    // const countryName = createElementWithClass(countryContainer,'p','countryName');
+     const countryName = createElementWithClass(countryContainer,'p','countryName');
     // const countryFlag = createElementWithClass(countryContainer,'img','flag');
     
-    const countryPopulation = createElementWithClass(resultContainer,'p','countryPopulation');   
+   // const countryPopulation = createElementWithClass(resultContainer,'p','countryPopulation');   
     const activeCases = createElementWithClass(resultContainer,'p','activeCases');
     const confirmedCases = createElementWithClass(resultContainer,'p','confirmedCases');
     const deathsCases = createElementWithClass(resultContainer,'p','deathsCases');

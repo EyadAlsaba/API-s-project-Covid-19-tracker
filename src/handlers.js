@@ -51,7 +51,7 @@ export function renderUserQuery () {
 
                 renderResultSection();
                 renderFooter();
-                // document.querySelector('.countryName').textContent = Country;
+                 document.querySelector('.countryName').textContent = Country;
                 // document.querySelector('.countryPopulation').textContent = `Population: ${population.toLocaleString()}`;               
                 document.querySelector('.activeCases').textContent = `Active cases: ${Active.toLocaleString()}`;
                 document.querySelector('.confirmedCases').textContent = `Confirmed Cases: ${Confirmed.toLocaleString()}`;
