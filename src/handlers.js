@@ -9,7 +9,8 @@ export function renderUserQuery () {
         Event.preventDefault();
 
         let userQuery = getDOMElement('country').value;  
-            
+        getDOMElement('country').value = '';
+
          async function makeRequest () {
                 const resultDiv = document.getElementById('resultContainer');
                 const  errorContainer = getDOMElement('errorContainer');
@@ -34,7 +35,7 @@ export function renderUserQuery () {
 
                 if(RESULTCONTAINER){
                     RESULTCONTAINER.remove();
-                    document.querySelector('.flag').remove();
+                    //document.querySelector('.flag').remove();
                 }
                 renderError();
             } else {
