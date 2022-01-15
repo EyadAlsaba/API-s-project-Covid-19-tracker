@@ -15,7 +15,7 @@ export function renderStartingPage () {
     const submitBtn = createDOMElementWithId(form,'input', {id:'submit-btn'});
     const welcome = createElementWithClass(container,'p','welcomeContainer');
 
-    welcome.textContent = `welcome to covid-19 tracker, our application shows last updated statistic's just in one click... ,
+    welcome.textContent = `Welcome to covid-19 tracker, our application shows last updated statistic's just in one click... ,
      all you need to do is type in your search country... `;
 
     inputCountry.setAttribute('placeholder','search country...');
@@ -25,6 +25,7 @@ export function renderStartingPage () {
 
     const logo = createElementWithClass(header,'img','logo')
     logo.src = './Public/virus-36773.png';
+
 }
 
 export function renderResultSection (){
@@ -48,4 +49,9 @@ export function renderError(){
     const errorImg = createElementWithClass(errorContainer,'img','error-img')
     errorMessage.textContent = `Please type in an valid country name !!!`;
     errorImg.src = './Public/error.png';
+}
+export function renderFooter (){
+    const footerContainer = createDOMElementWithId(BODY,'div', {id:'footer'});
+    const footerMsg = createElementWithClass(footerContainer,'p','footerMsg');
+    footerMsg.textContent = `Made with love 🍉`
 }

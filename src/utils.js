@@ -1,6 +1,5 @@
 // All credit's goes to HYF developers.
-import { renderError } from "./view.js";
-import {RESULTCONTAINER} from "./constant.js"
+import { renderError} from "./view.js";
 export function createElementWithClass(parent, element, className) {
     const newElement = document.createElement(element);
     parent.appendChild(newElement);

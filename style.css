@@ -16,7 +16,6 @@
     line-height: 1.2rem;
     color: var(--white);
     scroll-behavior: smooth;
-    text-transform: capitalize;
     letter-spacing: 2px;
 }
 .container{
@@ -93,7 +92,12 @@
 #resultContainer p {
     padding: 10px;
 }
-
+// #resultContainer p::after{
+//     display: block;
+//     content: '';
+//     width: 100%;
+//     background-color: grey;
+// }
 .error-img{
     border: 2px solid var(--lightblue);
     box-shadow: 2px 2px 20px blue;
@@ -115,6 +119,7 @@
     font-style: italic;
     letter-spacing: 5px;
     text-align: center;
+
 }
 .flag{
     max-width: 6%;
@@ -130,7 +135,16 @@
     line-height: 35px;
     margin: 10px auto;
 }
-
+#footer{
+    text-align: center;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-top: 2.2px solid var(--white);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px var(--white);
+}
 @keyframes shake {
     10%,
     90% {
@@ -163,7 +177,6 @@
         line-height: 1rem;
         color: var(--white);
         scroll-behavior: smooth;
-        text-transform: capitalize;
         letter-spacing: 1px;
     }
     .container{
