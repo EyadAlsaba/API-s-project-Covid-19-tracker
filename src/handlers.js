@@ -76,7 +76,7 @@ export function renderDateAndTime (){
     const date = document.querySelector('.date');
 
     function addCurrentTime() {
-        time.innerHTML = `time now <br>${new Date().toLocaleTimeString()}`;
+        time.innerHTML = `Time now <br>${new Date().toLocaleTimeString()}`;
       }
     setInterval(addCurrentTime, 1000);
 
