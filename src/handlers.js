@@ -82,7 +82,7 @@ export function renderDateAndTime (){
     setInterval(addCurrentTime, 1000);
 
     function addDate (){
-        date.innerHTML = `Today is <br>${new Date().toLocaleDateString()}`
+        date.innerHTML = `Today is <br>${new Date().toDateString()}`
     }
     addDate();
 }
